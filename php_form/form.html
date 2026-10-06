@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Information</title>
+
+    <style>
+        fieldset {
+            width: 750px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        input[type="text"] {
+            width: 210px;
+            margin-bottom: 3px;
+        }
+
+        textarea {
+            width: 480px;
+            height: 80px;
+            vertical-align: top;
+        }
+
+        select {
+            width: 210px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="config.php" method="post">
+
+        <fieldset>
+
+            <legend><b>Enter Your Information</b></legend>
+
+            <div>
+                <label for="fullname">Fullname</label>
+                <input type="text" name="fullname" id="fullname">
+            </div>
+
+            <div>
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+            </div>
+
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+
+            <div>
+                <label>Gender</label>
+
+                <input type="radio"
+                       name="gender"
+                       id="male"
+                       value="Nam"
+                       checked>
+
+                <label for="male" style="width: auto;">
+                    Nam
+                </label>
+
+                <input type="radio"
+                       name="gender"
+                       id="female"
+                       value="Nữ">
+
+                <label for="female" style="width: auto;">
+                    Nữ
+                </label>
+            </div>
+
+            <div>
+                <label for="country">Country</label>
+
+                <select name="country" id="country">
+
+                    <option value="Việt Nam">
+                        Việt Nam
+                    </option>
+
+                    <option value="Hoa Kỳ">
+                        Hoa Kỳ
+                    </option>
+
+                    <option value="Nhật Bản">
+                        Nhật Bản
+                    </option>
+
+                    <option value="Hàn Quốc">
+                        Hàn Quốc
+                    </option>
+
+                </select>
+            </div>
+
+            <div>
+                <label>Study</label>
+
+                <input type="checkbox"
+                       name="study[]"
+                       value="PHP & MySQL">
+
+                PHP & MySQL
+
+                <input type="checkbox"
+                       name="study[]"
+                       value="ASP.NET">
+
+                ASP.NET
+
+                <input type="checkbox"
+                       name="study[]"
+                       value="CCNA">
+
+                CCNA
+
+                <input type="checkbox"
+                       name="study[]"
+                       value="Security+">
+
+                Security+
+            </div>
+
+            <div>
+                <label for="note">Note</label>
+
+                <textarea name="note" id="note"></textarea>
+            </div>
+
+            <br>
+
+            <input type="submit" value="Gửi">
+
+            <input type="reset" value="Hủy">
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
